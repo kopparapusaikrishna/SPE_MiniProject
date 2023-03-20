@@ -2,6 +2,11 @@
 - name: pull mini_project image
   hosts: all
   tasks:
+          - name: pull the image
+            service:
+              name: docker
+              source: started
+              
           - name: Pull junit devops image 
             docker_image:
                   name: sk12092001/calculator

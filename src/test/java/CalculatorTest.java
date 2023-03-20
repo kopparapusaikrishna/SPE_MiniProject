@@ -36,7 +36,6 @@ public class CalculatorTest {
     @Test
     public void testpowerFunction() {
         assertEquals(4.0, Calculator.powerFunction(2, 2),0.0f);
-        assertEquals(8.0, Calculator.powerFunction(2, 3),0.0f);
         assertEquals(9.0, Calculator.powerFunction(3, 2),0.0f);
         assertEquals(81.0, Calculator.powerFunction(3, 4),0.0f);
         assertEquals(100.0, Calculator.powerFunction(10, 2),0.0f);

@@ -1,7 +1,10 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.util.Scanner;
 
 public class Calculator {
 
+    private static Logger logger = LogManager.getLogger(Calculator.class);
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int choice;
@@ -60,22 +63,30 @@ public class Calculator {
 
     public static double squareRoot(double num){
         double sqrt = Math.sqrt(num);
+        logger.info("[SQRT] - " + num);
+        logger.info("[RESULT - SQRT] - " + sqrt);
         return sqrt;
     }
 
     public static double naturalLog(double num){
-        double log = Math.log(num);
-        return log;
+        double res = Math.log(num);
+        logger.info("[LOG] - " + num);
+        logger.info("[RESULT - LOG] - " + res);
+        return res;
     }
     public static int factorial(int num){
         int fact = 1;
         for (int i = 1; i <= num; i++) {
                 fact *= i;
         }
+        logger.info("[FACTORIAL] - " + num);
+        logger.info("[RESULT - FACTORIAL] - " + fact);
         return fact;
     }
     public static double powerFunction(double x, double b){
         double power = Math.pow(x, b);
+        logger.info("[POWER] - " + x + ", " + b);
+        logger.info("[RESULT - POWER] - " + power);
         return power;
     }
 }

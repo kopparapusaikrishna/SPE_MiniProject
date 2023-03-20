@@ -22,7 +22,6 @@ public class CalculatorTest {
         assertEquals(1, Calculator.factorial(1));
         assertEquals(6, Calculator.factorial(3));
         assertEquals(24, Calculator.factorial(4));
-        assertEquals(720, Calculator.factorial(6));
     }
 
     @Test

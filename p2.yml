@@ -2,7 +2,7 @@
 - name: pull mini_project image
   hosts: all
   tasks:             
-          - name: Pull junit devops image 
+          - name: Pull devops image 
             docker_image:
                   name: sk12092001/calculator
                   source: pull

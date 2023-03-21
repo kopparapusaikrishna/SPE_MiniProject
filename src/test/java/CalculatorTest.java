@@ -9,10 +9,9 @@ public class CalculatorTest {
 
     @Test
     public void testSquareRoot() {
-        assertEquals(2.0, Calculator.squareRoot(4),0.0f);
         assertEquals(4.0, Calculator.squareRoot(16),0.0f);
         assertEquals(5.0, Calculator.squareRoot(25),0.0f);
-        assertEquals(6.0, Calculator.squareRoot(36),0.0f);
+        assertEquals(16.0, Calculator.squareRoot(256),0.0f);
     }
 
     @Test
@@ -21,6 +20,7 @@ public class CalculatorTest {
         assertEquals(1, Calculator.factorial(1));
         assertEquals(6, Calculator.factorial(3));
         assertEquals(24, Calculator.factorial(4));
+        assertEquals(3628800, Calculator.factorial(10));
     }
 
     @Test

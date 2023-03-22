@@ -8,4 +8,4 @@
                   source: pull
 
           - name : Running container
-            shell: docker run -it -d sk12092001/calculator
+            shell: docker run -it -d sk12092001/calculator /bin/bash

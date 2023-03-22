@@ -7,5 +7,5 @@
                   name: sk12092001/calculator
                   source: pull
 
-          - name: creating updated container
-            shell: docker run -id sk12092001/calculator
+          - name : Running container
+            shell: docker run -it -d sk12092001/calculator
